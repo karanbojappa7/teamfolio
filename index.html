@@ -12,6 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--   bootstrap CDN,s  -->
     <!--   google fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
@@ -21,9 +24,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+
     <!--    files   -->
 
+
+    <link rel="stylesheet" type="text/css" href="style_sheets/owl.carousel.css" />
+
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style_sheets/normalize.css">
     <link rel="stylesheet" href="style_sheets/style.css">
 
 </head>
@@ -40,7 +49,7 @@
 
     <div class="">
         <section id="sec1">
- <div id="stars"></div>
+            <div id="stars"></div>
             <div class="ngbar">
                 <div class="tog offset-11">
                     <label>
@@ -51,23 +60,36 @@
 
                 <ul class="col-sm-4 fullnav">
                     <li class="ts1">G.O.A.T</li>
-                    <li class="conleft det ts2">Home</li>
-                    <li class="det ts2">Services</li>
-                    <li class="det ts2">Contact</li>
+                    <li id="link1" class="conleft det ts2">Home</li>
+                    <li id="link2" class="det ts2">About</li>
+                    <li id="link3" class="det ts2">Services</li>
+                    <li id="link4" class="det ts2">Contact</li>
                 </ul>
 
-                <div class="col-sm-4">
+                <div class="col-sm-5">
                     <hr class="line">
                 </div>
             </div>
 
 
 
-           
+
 
 
 
             <div class="container-fluid">
+                <div class="container bc">
+
+                    <div class="bird-container bird-container-one">
+                        <div class="bird bird-one"></div>
+                    </div>
+                    <div class="bird-container bird-container-two">
+                        <div class="bird bird-two"></div>
+                    </div>
+                    <div class="bird-container bird-container-three">
+                        <div class="bird bird-three"></div>
+                    </div>
+                </div>
 
 
                 <div class="row">
@@ -78,17 +100,19 @@
                     </div>
 
                     <div class="sm col d-none d-xl-block">
-                        <div class="sun"></div>
                         <div class="moon">
                             <div class="spin"></div>
                         </div>
+                        <div class="sun"></div>
+
                     </div>
 
                     <div class="sm mx-auto d-xl-none">
-                        <div class="sun"></div>
                         <div class="moon ">
                             <div class="spin"></div>
                         </div>
+                        <div class="sun"></div>
+
                     </div>
 
 
@@ -100,6 +124,15 @@
                     <div class="pscale whiteco d-none d-xl-block ts2">PARADOX</div>
 
                 </div>
+
+
+
+                <svg class="arrows d-none d-xl-block">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+
         </section>
 
 
@@ -108,113 +141,387 @@
 
     </div>
 
+    <!------------------- dhnanush -------------------------->
 
-    <div id="sec2"></div>
-    <div id="sec3"></div>
-    <div id="sec4"></div>
-    <div id="sec5"></div>
+
+    <section id="sec2">
+
+        <div class="abt-tab">
+            <a class="tablink text-white" onclick="openPage('Home', this, '#eb800b')">About us</a>
+            <a class="tablink text-white" onclick="openPage('News', this, '#eb800b')" id="defaultOpen">Why us?</a>
+            <a class="tablink text-white" onclick="openPage('Contact', this, '#eb800b')">Our strength</a>
+            <a class="tablink text-white" onclick="openPage('About', this, '#eb800b')">Quality</a>
+        </div>
+
+
+
+
+        <div id="Home" class="tabcontent">
+            <div class="container fde">
+                <div class="head-a pb-5">About us</div>
+                <div class="row pad">
+                    <div class="col-lg-6 "> <img src="style_sheets/pictures/aboutus.png" class="img-fluid mx-auto d-block" alt=""></div>
+                    <div class="col-lg-6  pt-5 pt-lg-0">
+                        <p class="text-b pt-5" style="padding-left: 15px;">The motive of this website is to take care of you, when nobody does or
+                            you can say that , we make you so capable to take care of your own website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="News" class="tabcontent">
+            <div class="container fde">
+                <div class="head-b pb-5">Why choose us?</div>
+                <div class="row pad">
+                    <div class="col-lg-6 "> <img src="style_sheets/pictures/why.jfif" class="img-fluid mx-auto d-block" alt=""></div>
+                    <div class="col-lg-6  pt-5 pt-lg-0">
+                        <p class="text-a">We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="Contact" class="tabcontent">
+            <div class="container fde">
+                <div class="head-a pb-5">Our strength</div>
+                <div class="row pad">
+                    <div class="col-lg-6 "> <img src="style_sheets/pictures/strength.jfif" class="img-fluid mx-auto d-block" alt=""></div>
+                    <div class="col-lg-6  pt-5 pt-lg-0">
+                        <p class="text-b">Our strength is our innovativeness and the ability to learn. Every client that we serve, every project that we undertake, every assignment that we complete adds to our rising skills and the wish to do better than the last time moves us good steps closer to understand our goal of fineness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="About" class="tabcontent">
+            <div class="container fde">
+                <div class="head-b pb-5">Quality</div>
+                <div class="row pad">
+                    <div class="col-lg-6 "> <img src="style_sheets/pictures/quality.jfif" class="img-fluid mx-auto d-block" alt=""></div>
+                    <div class="col-lg-6  pt-5 pt-lg-0">
+                        <p class="text-a">Quality is an all encompassing part of our business and lives. Strong quality procedures are built into every area of work</br>Our team knows that our clients must have our time and attention and hence we offer every single client with a high Quality product. We consider in total 100% sincerity and reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!------------------- dhnanush end ---------------------->
+
+    <!------------------- bhargav --------------------------->
+
+
+    <section id="sec3">
+        <div class="team-sec">
+      <div class="container">
+        <div class="row">
+          <!-------Box 1--------->
+              <div class="col-sm-4 col-md-5  col-lg-3 mx-auto">
+                <div class="team">
+                  <div class="pic">
+                    <img class="img-fluid " src="style_sheets/pictures/testimonal (5).jpg">
+                  </div>
+                    <h3>Karan Bojappa</h3>
+                    <h4 class="title">Web Developer</h4>
+                  <ul class="follow-ico">
+                    <li><a href="" class="fa fa-facebook"></a></li>
+                    <li><a href="" class="fa fa-twitter"></a></li>
+                    <li><a href="" class="fa fa-instagram"></a></li>
+                    <li><a href="" class="fa fa-linkedin"></a></li>
+                  </ul>
+                </div>
+              </div>
+
+     <!-------Box 2--------->
+              <div class="col-sm-4 col-md-5  col-lg-3 mx-auto">
+                <div class="team">
+                  <div class="pic">
+                    <img class="img-fluid " src="style_sheets/pictures/testimonal (3).jpg">
+                  </div>
+                    <h3>Bhargav</h3>
+                    <h4 class="title">Web Developer</h4>
+                  <ul class="follow-ico">
+                    <li><a href="" class="fa fa-facebook" ></a></li>
+                    <li><a href="" class="fa fa-twitter" ></a></li>
+                    <li><a href="" class="fa fa-instagram" ></a></li>
+                    <li><a href="" class="fa fa-linkedin"></a></li>
+                  </ul>
+                </div>
+              </div>
+     <!-------Box 3--------->
+              <div class="col-sm-4 col-md-5 col-lg-3 mx-auto">
+                <div class="team">
+                  <div class="pic">
+                    <img class="img-fluid " src="style_sheets/pictures/testimonal (5).jpg">
+                  </div>
+                    <h3>Sathish Kumar</h3>
+                    <h4 class="title">Web Developer</h4>
+                  <ul class="follow-ico">
+                    <li><a href="" class="fa fa-facebook" ></a></li>
+                    <li><a href="" class="fa fa-twitter" ></a></li>
+                    <li><a href="" class="fa fa-instagram" ></a></li>
+                    <li><a href="" class="fa fa-linkedin" ></a></li>
+                  </ul>
+                </div>
+              </div>
+     <!-------Box 4--------->
+              <div class="col-sm-4 col-md-5 col-lg-3 mx-auto">
+                <div class="team">
+                  <div class="pic">
+                    <img class="img-fluid " src="style_sheets/pictures/testimonal (3).jpg">
+                    </div>
+                    <h3>Dhanush Gowda</h3>
+                    <h4 class="title">Web Developer</h4>
+                  <ul class="follow-ico">
+                    <li><a href="" class="fa fa-facebook" ></a></li>
+                    <li><a href="" class="fa fa-twitter" ></a></li>
+                    <li><a href="" class="fa fa-instagram" ></a></li>
+                    <li><a href="" class="fa fa-linkedin" ></a></li>
+                  </ul>
+                </div>
+              </div>
+  
+       
+        </div>
+      </div>
+  
+    </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+    <!------------------- bhargav end------------------------>
+
+
+
+    <!------------------- sathish --------------------------->
+
+    <section id="sec4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="div1-contact">
+                            <div class="contact-line">
+                                <h2 class="h22">Contact</h2>
+                            </div>
+                            <div class="div2-contact">
+                                <h1 class="h11">Get in Touch with Us</h1>
+                                <hr class="hr1" />
+                                <form action="">
+                                    <input type="text" required placeholder="Your Name">
+                                    <input type="number" required placeholder="Your Contact Number">
+                                    <input type="email" required placeholder="Your Email Address">
+                                    <textarea rows="4" placeholder="Your Message"></textarea>
+                                    <button class="">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="div2-contact">
+                            <h1 class="h12"><span>"</span> Got some work to be done then we are here feel free to say hello! <span>"</span></h1>
+                            <div class="phone">
+                                <div class="number">
+                                    <h4><i class="fas fa-phone-alt"></i> Phone: +91 **********</h4>
+                                </div>
+                                <div class="email">
+                                    <h4><i class="far fa-envelope"></i> Email: *******@gmail.com</h4>
+                                </div>
+                                <div class="extra">
+                                    <h5>Web designers by Coders paradox <i class="far fa-copyright">.</i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!------------------- sathish end------------------------>
+
+    <!--    <div id="sec5"></div>-->
+
+
+
+
+
+
+
 
 
 
     <div class="sidecar">
-        <div class="num whitecol ts2"><span class="nuch">1</span>|5</div>
+        <div class="num whitecol ts2"><span class="nuch">1</span>|4</div>
     </div>
     </div>
 
 
-    
+
     <script>
-                $(document).ready(function() {
+        $(document).ready(function() {
             $(window).scroll(function() {
                 var num = $(window).scrollTop();
                 if (num > -1 && num < 700) {
                     $('.nuch').html("<span class='nuch'>" + "1" + "</span>");
-                    $('.nuch').css("position","fixed");
-                    $('.num').css("right","4%");
-                    $('.nuch').css("margin-left","-12%");
-                    
-                } 
+                    $('.nuch').css("position", "fixed");
+                    $('.num').css("right", "4.5%");
+                    $('.num').css("top", "48");
+                    $('.nuch').css("margin-left", "-10%");
+
+                }
             });
-        });                
-        
+        });
+
         $(document).ready(function() {
             $(window).scroll(function() {
                 var num1 = $(window).scrollTop();
-                if (num1 > 700 && num1 < 1500) {
+                if (num1 > 700 && num1 < 1300) {
                     $('.nuch').html("<span class='nuch'>" + "2" + "</span>");
-                    $('.nuch').css("position","fixed");
-                    $('.num').css("right","4%");
-                    $('.nuch').css("margin-left","-12%");
-                    
-                    
+                    $('.nuch').css("position", "fixed");
+                    $('.num').css("right", "4.5%");
+                    $('.num').css("top", "48");
+                    $('.nuch').css("margin-left", "-10%");
+
+
                 }
             });
-        });        
+        });
         $(document).ready(function() {
             $(window).scroll(function() {
                 var num2 = $(window).scrollTop();
-                if (num2 > 1500 && num2 < 2000) {
+                if (num2 > 1300 && num2 < 1800) {
                     $('.nuch').html("<span class='nuch'>" + "3" + "</span>");
-                    $('.nuch').css("position","fixed");
-                    $('.num').css("right","4%");
-                    $('.nuch').css("margin-left","-12%");
-                    
-                    
-                } 
-            });
-        });       
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                var num2 = $(window).scrollTop();
-                if (num2 > 2000 && num2 < 2600) {
-                    $('.nuch').html("<span class='nuch'>" + "4" + "</span>");
-                    $('.nuch').css("position","fixed");
-                    $('.num').css("right","4%");
-                    $('.nuch').css("margin-left","-12%");
-                    
-                    
-                } 
+                    $('.nuch').css("position", "fixed");
+                    $('.num').css("right", "4.5%");
+                    $('.num').css("top", "48%");
+                    $('.nuch').css("margin-left", "-10%");
+
+
+                }
             });
         });
-               
         $(document).ready(function() {
             $(window).scroll(function() {
                 var num2 = $(window).scrollTop();
-                if (num2 > 2600) {
-                    $('.nuch').html("<span class='nuch'>" + "5 " + "</span>");
-                    $('.num').css("position","fixed");
-                    $('.nuch').css("margin-left","-20%");
-                    $('.num').css("right","4%");
-                    
-                } 
+                if (num2 > 1800) {
+                    $('.nuch').html("<span class='nuch'>" + "4" + "</span>");
+                    $('.nuch').css("position", "fixed");
+                    $('.num').css("right", "4.5%");
+                    $('.num').css("top", "48%");
+                    $('.nuch').css("margin-left", "-10%");
+
+
+                }
             });
-        });       
-        
+        });
+
+
+
         $(document).ready(function() {
             $(window).scroll(function() {
                 var stars = $(window).scrollTop();
-                if (stars > 700) {
+                if (stars > 350) {
                     $('#stars').css('opacity', '0');
-                } else{
-                    $("#stars").css('opacity','1')
+                } else {
+                    $("#stars").css('opacity', '1')
                 }
             });
         });
-        
+
     </script>
-    
+
 
     <script type="text/javascript">
         $(document).ready(function() {
             $('.mode').click(function() {
-                $('#sec1 , .cscale ,.pscale,.line,.cline,.earth,.sun,#star,.ngbar').toggleClass('change')
+                $('#sec1 , .cscale ,.pscale,.line,.cline,.earth,.sun,#stars,.ngbar,.bc,body,.tablink,.pic,.team,.follow-ico').toggleClass('change')
             })
         })
 
     </script>
 
+    <script>
+        $(document).ready(function() {
+
+            $('#link1').click(function() {
+                $('html,body').animate({
+                    scrollTop: $('#sec1').offset().top
+                }, 850);
+            });
+
+            $('#link2').click(function() {
+                $('html,body').animate({
+                    scrollTop: $('#sec2').offset().top
+                }, 850);
+            });
+
+            $('#link3').click(function() {
+                $('html,body').animate({
+                    scrollTop: $('#sec3').offset().top
+                }, 850);
+            });
+
+            $('#link4').click(function() {
+                $('html,body').animate({
+                    scrollTop: $('#sec4').offset().top
+                }, 850);
+            });
+        });
+
+    </script>
+
+
+    <!--------------------- D  Script ------------------------>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+        document.getElementById("defaultOpen").click();
+
+    </script>
+
+
+    <!--------------------- D Script end ------------------------>
+    <!--------------------- B  Script ------------------------>
+    <!--------------------- B Script end ------------------------>
+    <!--------------------- S Script ------------------------>
+    <!--------------------- S  Script end ------------------------>
+
+
+
+
+
+
+
+
 
     <!--  script's  -->
+  <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
