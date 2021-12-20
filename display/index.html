@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                <!--   bootstrap CDN,s  -->
+    <!--   google fonts  -->
+    <!--    files   -->
+    <link rel="stylesheet" href="style_sheets/style.css">
+    
+</head>
+<body>
+
+    <!-- ..start..   -->
+    
+<div class="container">  
+    <h1>Messages</h1>
+    <button id="getform" class="btn btn-danger">Refresh</button>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>message</th>
+      </tr>
+    </thead>
+    <tbody id="formdata">
+    </tbody>
+  </table>
+</div>
+    
+    
+    
+    
+
+    
+        
+    <div class="container">  
+    <h1>View Counter</h1>
+            <button id="getvisitors" class="btn btn-danger">Refresh</button>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Ip</th>
+      </tr>
+    </thead>
+    <tbody id="visitorsdata">
+    </tbody>
+  </table>
+</div>
+    
+    
+    <script>
+        $('#getform').click(function() {
+            
+            $.ajax({
+                url: 'php/form.php',
+                type: 'post',
+                success:function(responsedata){
+                    $('#formdata').html(responsedata);
+                }
+            });
+        });
+    </script>
+    
+
+    
+        <script>
+        $('#getvisitors').click(function() {
+            
+            $.ajax({
+                url: 'php/visitors.php',
+                type: 'post',
+                success:function(responsedata3){
+                    $('#visitorsdata').html(responsedata3);
+                }
+            });
+        });
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    <!--  script's  -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
